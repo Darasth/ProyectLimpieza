@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <script code.jquery.com/jquery-3.4.1.min.js></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <title>Mas que limpieza</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <link rel="stylesheet" href="styleinicio.css">
+    <!-- Bootstrap Date-Picker Plugin -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+        <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+      </head>
+
+      <!-- Barra de arriba -->
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: #7A9EAB;">
+      <a class="navbar-brand" href="#"><img src="#"></a> <!-- Hacer imagen -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="inicioSupervisiones.html">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#cuentas" role="button" aria-haspopup="true" aria-expanded="false">Registro</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="lugares.html">Lugares</a>
+                  <a class="dropdown-item" href="turno.html">Turno</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#cuentas" role="button" aria-haspopup="true" aria-expanded="false">Cuentas</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="empleados.html">Empleados</a>
+                    <a class="dropdown-item" href="supervisores.html">Supervisores</a>
+                    <a class="dropdown-item" href="cuenta.html">Mi Cuenta</a>
+                  </div>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="configuracion.html">Configuración</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+
+
+
+  <div class="col-sm-20 main-section">
+  <div class="row">
+    <div class="col-2">
+      <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill"
+        href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Supervisiones</a>
+        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill"
+        href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Reportes</a>
+        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill"
+         href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Solicitudes</a>
+        <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill"
+        href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Sistema</a>
+      </div>
+    </div>
+
+    <div class="col-9">
+
+      <div class="tab-content" id="v-pills-tabContent">
+        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+
+          <div class="container" id="botonPlus">
+            <h2 class= "text-center" id="supervisadostit">Supervisados</h2>
+              <a data-toggle="modal" data-target="#realizarsup"><img class="img-fluid float-right" src="image/plus.png"></a>
+              </div>
+              <div id="realizarsup" class="modal fade" role="dialog">
+                  <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title">Realizar supervision</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      <div class="modal-body text-center">
+                        <p>Seleccione el lugar del supervisado:</p>
+                        <div class="dropdown">
+                          <button id= dropdown-lugares class="btn dropdown-toggle border" type="button" data-toggle="dropdown">Lugares
+                          <span class="caret"></span></button>
+                          <ul class="dropdown-menu">
+                            <li><a>1234</a></li>
+                            <li><a>5678</a></li>
+                            <li><a>9101112</a></li>
+                          </ul>
+                        </div>
+                        <p id="p-supervisado">Supervisado: Carlos Prato en San Jacinto</p>
+                        <div class="form-group">
+                          <label for="comment">Comentarios:</label>
+                          <textarea class="form-control" rows="4" id="comment"></textarea>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Guardar</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+          <div class="table-responsive-sm">
+            <table class="table table-bordered">
+              <thead class="thead-dark">
+              <tr>
+                <th>Lugar</th>
+                <th>Supervisado</th>
+                <th>Supervisor</th>
+                <th>Hora</th>
+                <th>Comentario</th>
+              </tr>
+            </thead>
+              <tbody>
+                <tr>
+                  <td>Nombre del Lugar 1</td>
+                  <td>Empleado 1</td>
+                  <td>Supervisor 1</td>
+                  <td>hh:mm</td>
+                  <td>Este es un comentario</td>
+                </tr>
+                <tr>
+                  <td>Nombre del Lugar 1</td>
+                  <td>Empleado 1</td>
+                  <td>Supervisor 1</td>
+                  <td>hh:mm</td>
+                  <td>Este es un comentario</td>
+                </tr>
+                <tr>
+                  <td>Nombre del Lugar 1</td>
+                  <td>Empleado 1</td>
+                  <td>Supervisor 1</td>
+                  <td>hh:mm</td>
+                  <td>Este es un comentario</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+
+        <div class="container">
+          <h2 class= "text-center">Por Supervisar</h2>
+            </div>
+
+
+        <div class="col-8">
+        <div class="table-responsive-sm">
+          <table class="table table-bordered">
+            <thead class="thead-dark">
+            <tr>
+              <th>Lugar</th>
+              <th>Supervisado</th>
+            </tr>
+          </thead>
+            <tbody class="table-warning">
+              <tr>
+                <td>Nombre del Lugar 1</td>
+                <td>Empleado 1</td>
+              </tr>
+              <tr>
+                <td>Nombre del Lugar 1</td>
+                <td>Empleado 1</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Aqui empieza reportes -->
+        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+
+          <div class="col-sm-12" >
+              <div class="panel panel-default shadow">
+                <div class="panel-body">
+                  <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-sm-2"> Empleado
+                      <div class="dropdown">
+                        <button  class="btn dropdown-toggle border" type="button" data-toggle="dropdown">Lugares
+                        <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                          <li><a>dede</a></li>
+                          <li><a>5678</a></li>
+                          <li><a>9101112</a></li>
+                        </ul>
+                      </div>
+                   </div>
+
+
+                    <div class="col-sm-5">
+                      <div class="container">
+                        Desde: <input id="startDate" width="276" />
+                        Hasta: <input id="endDate" width="276" />
+                      </div>
+                      <script>
+                        var today = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());
+                        $('#startDate').datepicker({
+                            uiLibrary: 'bootstrap4',
+                            iconsLibrary: 'fontawesome',
+                            minDate: today,
+                            maxDate: function () {
+                                return $('#endDate').val();
+                            }
+                        });
+                        $('#endDate').datepicker({
+                            uiLibrary: 'bootstrap4',
+                            iconsLibrary: 'fontawesome',
+                            minDate: function () {
+                                return $('#startDate').val();
+                            }
+                        });
+                      </script> </div>
+                    <div class="col-sm-2"> Tipo
+                      <div class="dropdown">
+                        <button  class="btn dropdown-toggle border" type="button" data-toggle="dropdown">Cualquiera
+                        <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                          <li><a>Cualquiera</a></li>
+                          <li><a>Impuntual</a></li>
+                          <li><a>Inasistencia</a></li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-1">
+                      <button type="button" class="btn btn-light" type="submit"> <img src="image/search.png"> </button>
+                      <p>Buscar</p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="co-sm-12">
+              <div class="container-fluid">
+              <div id="reportes" class="panel panel-default shadow">
+                <h2 class="text-center">Reportes del Día</h2>
+                <div class="table-responsive">
+                  <table id="table-r" class="table">
+                  <tbody>
+                    <tr>
+                      <td>Empleado1</td>
+                      <td>El lugar mas largo del puto mundo</td>
+                      <td><ul class="list-group list-group-flush">
+                            <li class="list-group-item">8:00 am <span class="badge badge-success badge-pill">Puntual</span></li>
+                            <li class="list-group-item">12:00 am <span class="badge badge-success badge-pill">Puntual</span></li>
+                          </ul></td>
+                    </tr>
+                    <tr>
+                      <td>Empleado1</td>
+                      <td>El lugar mas largo del puto mundo</td>
+                      <td><ul class="list-group list-group-flush">
+                            <li class="list-group-item">8:00 am <span class="badge badge-warning badge-pill">Impuntual</span></li>
+                            <li class="list-group-item">12:00 am <span class="badge badge-warning badge-pill">Impuntual</span></li>
+                          </ul></td>
+                    </tr>
+                    <tr>
+                      <td>Empleado2</td>
+                      <td>El lugar mas largo del puto mundo</td>
+                      <td><ul class="list-group list-group-flush">
+                            <li class="list-group-item">8:00 am <span class="badge badge-danger badge-pill">Inasistencia</span></li>
+                            <li class="list-group-item">12:00 am <span class="badge badge-danger badge-pill">Inasistencia</span></li>
+                          </ul></td>
+                    </tr>
+                  </tbody>
+                </table>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+        </div>
+<!-- Aqui empieza Solicitudes-->
+        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+
+        </div>
+        <!-- Aqui empieza notificaciones-->
+        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+          <h2 class="text-center">Notificaciones del sistema</h2>
+        </div>
+
+    </div>
+  </div>
+  </div>
+</div>
+
+
+
+
+
+
+    </body>
+  </html>

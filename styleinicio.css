@@ -1,0 +1,136 @@
+@import url('https://font.googleapis.com/css?family=Roboto');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (min-width: 601px) {
+  h2 {
+    font-size: 40px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+ h2 {
+    font-size: 25px;
+  }
+}
+
+.table-responsive-sm {
+  padding-left: 60px;
+}
+
+.main-section {
+  margin: 0 auto;
+  margin-top: 130px;
+  padding: 0;
+}
+
+.nav-pills {
+  border-radius: 4%;
+  background-color: #baebf5
+
+}
+
+.nav-pills a{
+  color: black;
+}
+
+.nav-pills .nav-link.active {
+  color: black;
+  background-color: #46a7bb;
+}
+
+#dataTable thead {
+  display: none;
+}
+
+
+#dropdown-lugares{
+  text-align: center;
+  width: 50%;
+
+}
+
+.list-group {
+  border-top: 0;
+}
+
+#table-r {
+
+  border-spacing: 1.5em;
+}
+
+
+#p-supervisado{
+  font-size: 70%;
+}
+
+.panel{
+  padding-left: 100px;
+  padding-bottom: 30px;
+}
+
+.col-sm-1 img{
+  width: 60px;
+  height: 60px;
+}
+.col-sm-1 p{
+  padding-left: 20px;
+}
+
+.col-6{
+  display: inline-block;
+}
+
+.col-8{
+  margin: auto;
+  padding-top: 10px;
+}
+
+.panel-body{
+padding-left: 20px;
+padding-top: 10px;
+}
+
+#botonlugar {
+  margin: 0 auto;
+  width: 144px;
+}
+
+h2 {
+  padding-bottom: 2px;
+
+}
+
+#supervisadostit{
+    display: inline-block;
+}
+
+#botonPlus img{
+  height: 40px;
+  width: 40px;
+
+}
+
+#reportes{
+margin-top: 0.20%;
+padding-top: 40px;
+}
+
+.modal-title {
+  border-bottom:1px solid black;
+  padding-bottom:3px;
+  text-align: left;
+}
+
+#botonPlus {
+ text-align: center;
+}
+
+
+
+h3{
+  padding-top: 10px;
+}

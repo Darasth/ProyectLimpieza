@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <script code.jquery.com/jquery-3.4.1.min.js></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <title>Mas que limpieza</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <link rel="stylesheet" href="styleinicio.css">
+    <script type="text/javascript" src="s">
+
+    </script>
+      </head>
+
+      <!-- Barra de arriba -->
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: #7A9EAB;">
+      <a class="navbar-brand" href="#"><img src="#"></a> <!-- Hacer imagen -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="inicioSupervisiones.html">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#cuentas" role="button" aria-haspopup="true" aria-expanded="false">Registro</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="lugares.html">Lugares</a>
+                  <a class="dropdown-item" href="turno.html">Turno</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#cuentas" role="button" aria-haspopup="true" aria-expanded="false">Cuentas</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="empleados.html">Empleados</a>
+                    <a class="dropdown-item" href="supervisores.html">Supervisores</a>
+                    <a class="dropdown-item" href="cuenta.html">Mi Cuenta</a>
+                  </div>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#configuracion">Configuración</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+
+        <div class="col-sm-10 main-section">
+          <h2 class="text-center">Lugares</h2>
+        <div class="table-responsive-sm">
+          <table class="table table-bordered">
+            <thead class="thead-dark">
+            <tr>
+              <th>Nº</th>
+              <th>Nombre</th>
+              <th>Latitud</th>
+              <th>Longitud</th>
+              <th>Direccion</th>
+              <th></th>
+            </tr>
+          </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>primerLugar</td>
+                <td>7.5454</td>
+                <td>-7.25484</td>
+                <td>Direccion especifica</td>
+                <td><button type="button" class="btn btn-link">Ver en mapa</button>
+                  <button type="button" class="btn btn-link">Editar</button>
+                  <button type="button" class="btn btn-link">Eliminar</button></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>segundoLugar</td>
+                <td>7.5454</td>
+                <td>-7.25484</td>
+                <td>Direccion especifica</td>
+                <td><button type="button" class="btn btn-link">Ver en mapa</button>
+                  <button type="button" class="btn btn-link">Editar</button>
+                  <button type="button" class="btn btn-link">Eliminar</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="text-center">
+          <button id="botonlugar" type="button" name="button">Agregar lugar</button>
+        </div>
+
+      </div>
